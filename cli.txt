@@ -1,0 +1,35 @@
+cek composer:
+composer
+
+setting xampp --> php.ini
+extension=curl
+extension=intl
+extension=mbstring
+
+Instalasi:
+arahkan cli ke folder project
+[project-root] --> nama project gunakan "-" untuk pengganti spasi
+composer create-project codeigniter4/appstarter project-root
+
+untuk menjalanakan
+php spark serve -> localhost:8080
+localhost/folder-project/public
+
+
+php spark migrate:create Peserta
+php spark migrate
+
+php spark make:seeder PesertaSeeder
+php spark db:seed PesertaSeeder
+
+
+Latihannya
+Buat 2 buah menu 
+Tampilkan tabel mahasiswa (Nama | Matakuliah | Nilai)
+Tampilkan Tabel Prodi (Fak | Jurusan)
+Catatan jangan lupa routing di sesuaikan dam genukan template
+
+
+Protected : di kelasnya sendiri dan keturunannya
+Private : hanya di kelas itu saja
+Public : Bisa di akses seluruh kelas
